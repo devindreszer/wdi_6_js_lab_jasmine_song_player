@@ -8,5 +8,8 @@ Player.prototype = {
   play: function(song){
     this.isPlaying = true;
     this.currentSong = song;
+  },
+  pause: function() {
+    this.isPlaying = false;
   }
 };
