@@ -18,5 +18,8 @@ Player.prototype = {
     } else {
       this.isPlaying = true;
     }
+  },
+  makeFavorite: function() {
+    this.currentSong.persistFavoriteStatus(true);
   }
 };
